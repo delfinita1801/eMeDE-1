@@ -7,8 +7,8 @@
 </head>
 <body>
     <div class="nav-container">
-        <a href="http://localhost/eMeDE/public/index.php/casas" class="nav-item">Casas</a>
-        <a href="http://localhost/eMeDE/public/index.php/consumo" class="nav-item">Consumo Actual</a>
+        <a href="http://localhost/emede/public/index.php/casas" class="nav-item">Casas</a>
+        <a href="http://localhost/emede/public/index.php/panel" class="nav-item">Consumo Actual</a>
     </div>
 </body>
 </html>

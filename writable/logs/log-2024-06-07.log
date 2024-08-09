@@ -1,0 +1,30 @@
+INFO - 2024-06-07 11:07:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 11:07:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 11:07:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 11:07:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-07 11:08:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-07 11:37:50 --> ErrorException: Undefined array key "direccion"
+[Method: GET, Route: casas]
+in APPPATH\Views\casas.php on line 29.
+ 1 APPPATH\Views\casas.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "direccion"', 'C:\\xampp\\htdocs\\emede\\app\\Views\\casas.php', 29)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\emede\\app\\Views\\casas.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('casas', [], true)
+ 5 APPPATH\Controllers\CasasController.php(17): view('casas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CasasController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CasasController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-06-07 11:39:32 --> BadMethodCallException: Call to undefined method App\Models\CasaModel::getCasasWithDetails
+[Method: GET, Route: casas]
+in SYSTEMPATH\Model.php on line 921.
+ 1 APPPATH\Controllers\CasasController.php(15): CodeIgniter\Model->__call('getCasasWithDetails', [])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CasasController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CasasController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-06-07 11:46:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

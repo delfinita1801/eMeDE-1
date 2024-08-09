@@ -50,13 +50,13 @@ class UsuarioController extends Controller
             if ($authenticatePassword) {
                 $sessionData = [
                     'id_usuario' => $data['id_usuario'],
-                    'Nombre'     => $data['Nombre'],
-                    'Apellido'   => $data['Apellido'],
+                    'Nombre'     => $data['nombre'],
+                    'Apellido'   => $data['apellido'],
                     'email'      => $data['email'],
                     'logged_in'  => TRUE
                 ];
                 $session->set($sessionData);
-                return redirect()->to('/panel');
+                return redirect()->to('/inicio');
             } else {
                 $session->setFlashdata('msg', 'Contraseña incorrecta.');
                 return redirect()->to('/login');

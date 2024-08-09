@@ -11,7 +11,7 @@
     <h3>Consumo de Energía</h3>
     <table border="1">
         <tr>
-            <th>Dispositivo</th>
+            <th>Casa</th>
             <th>Energía (Wh)</th>
             <th>Tiempo (h)</th>
             <th>Fecha de Registro</th>
